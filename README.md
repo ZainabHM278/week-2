@@ -3,7 +3,7 @@
 **1. Setup:**
 
 - **Install Dart:**
-  - Follow the official Dart installation guide to download and install Dart on your local machine: <https://dart.dev/get-dart>
+  - Follow the official Flutter/Dart installation guide to download and install Dart on your local machine: <https://docs.flutter.dev/get-started/install>
 
 **2. Variables:**
 
