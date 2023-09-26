@@ -1,5 +1,30 @@
 # Week 2: Dart
 
+## Overview
+
+This week, you'll learn the basics of Dart, a programming language developed by Google. Dart is used to build mobile, desktop, and web applications using the Flutter framework. You'll learn how to declare and initialize variables, handle errors, define classes, and use constructors. You'll also learn about Dart's null safety feature and build a simple task list app.
+
+## Learning Objectives
+
+By the end of this week, you should be able to:
+
+- Install Dart on your local machine
+- Declare and initialize variables
+- Handle errors using try-catch blocks
+- Define classes and use constructors
+- Understand Dart's null safety feature
+- Build a simple task list app
+
+## Resources
+
+- [Dart Documentation](https://dart.dev/guides)
+- [DartPad](https://dartpad.dev/)
+- [What is Dart?](https://www.youtube.com/watch?v=NrO0CJCbYLA)
+- [Dart Basics | Long Video](https://www.youtube.com/watch?v=Fqcsow_7go4)
+- [Dart Basics | Articles](https://www.geeksforgeeks.org/dart-tutorial/)
+
+## Project Details
+
 **1. Setup:**
 
 - **Install Dart:**
