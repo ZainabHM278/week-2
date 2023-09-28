@@ -163,7 +163,48 @@ By the end of this week, you should be able to:
   - Dart enables null safety by default. Ensure you're using Dart version 2.12 or higher.
   - Annotate variables and function parameters with `?` to indicate nullable types when needed. Dart's null safety will help catch null-related errors.
 
-**7. Task List App:**
+**7. Understanding Dart IO:**
+
+- **Read and write to console:**
+  - Use the `stdin` and `stdout` objects to read and write to the console:
+
+       ```dart
+       import 'dart:io';
+
+       void main() {
+         stdout.write('Enter your name: ');
+         String? name = stdin.readLineSync();
+         print('Hello, $name!');
+       }
+       ```
+
+- **Converting Console Input to other datatypes:**
+  - Use the `int.parse()` and `double.parse()` methods to convert console input to integers and doubles, respectively:
+
+       ```dart
+       import 'dart:io';
+
+       void main() {
+         stdout.write('Enter your age: ');
+         int? age = int.parse(stdin.readLineSync()!);
+         print('Age: $age');
+       }
+       ```
+
+- **Error Handling Console Input:**
+  - Use the `tryParse()` method to handle errors when converting console input to integers and doubles:
+
+       ```dart
+       import 'dart:io';
+
+       void main() {
+         stdout.write('Enter your age: ');
+         int? age = int.tryParse(stdin.readLineSync()) ?? 0;
+         print('Age: $age');
+       }
+       ```
+
+**8. Task List App:**
 
 - **Build a Task List App:**
   - Create a new Dart file (e.g., `task_list.dart`) to build the task list app.
