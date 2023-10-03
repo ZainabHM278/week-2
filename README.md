@@ -126,16 +126,26 @@ By the end of this week, you should be able to:
          bool isCompleted;
 
          Task(this.id, this.title, this.description, this.isCompleted);
-
-         // Constructor for creating a task with default values
-         Task.create() {
-           id = 0;
-           title = '';
-           description = '';
-           isCompleted = false;
-         }
        }
        ```
+
+  - Or you can assign default values to the constructor parameters:
+
+       ```dart
+        class Task {
+          int id;
+          String title;
+          String description;
+          bool isCompleted;
+
+          Task({
+            this.id = 0,
+            this.title = "",
+            this.description = "",
+            this.isCompleted = false,
+          });
+        }
+        ```
 
 - **Create Task Objects Using Constructors:**
   - In `variables.dart`, use the new constructor to create task objects:
