@@ -125,7 +125,12 @@ By the end of this week, you should be able to:
          String description;
          bool isCompleted;
 
-         Task(this.id, this.title, this.description, this.isCompleted);
+         Task({
+          required this.id,
+          required this.title,
+          required this.description,
+          required this.isCompleted
+          });
        }
        ```
 
@@ -154,11 +159,21 @@ By the end of this week, you should be able to:
        import 'task.dart';
 
        void main() {
-         Task task1 = Task(1, 'Buy groceries', 'Buy milk, eggs, and bread', false);
-         Task task2 = Task(2, 'Read a book', 'Read "The Catcher in the Rye"', true);
+         Task task1 = Task(
+          id: 1,
+          title: 'Buy groceries',
+          description: 'Buy milk, eggs, and bread',
+          isCompleted: false,
+         );
+         Task task2 = Task(
+          id: 2,
+          title: 'Read a book',
+          description: 'Read "The Catcher in the Rye"',
+          isCompleted: true,
+         );
 
          // Create a task using the constructor with default values
-         Task task3 = Task.create();
+         Task task3 = Task()
 
          // Print task properties
          print('Task 1: ${task1.title}, Completed: ${task1.isCompleted}');
